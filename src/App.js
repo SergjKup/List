@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./App.css";
-
 const TodoList = ({ todo, handleCheck, handleDelete }) => {
   const check = () => {
     handleCheck(todo.id);

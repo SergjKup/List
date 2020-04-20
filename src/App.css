@@ -1,0 +1,125 @@
+body {
+  background: gainsboro;
+  box-sizing: border-box;
+  color: grey;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #c70e0e;
+  font-size: 5rem;
+  font-weight: 100;
+}
+
+.wrapper {
+  width: 80%;
+}
+
+.input {
+  display: flex;
+  padding: 12px 20px;
+  margin: 8px 0px 20px;
+  background: white;
+  box-shadow: 5px 5px 5px#fce1bafa;
+}
+
+.input_todo {
+  font-size: 1.2rem;
+  font-weight: 300;
+  border-style: none;
+  margin-left: 5px;
+  width: 100%;
+}
+
+.input_todo:focus {
+  outline: none;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0;
+  background: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: 0px 20px;
+  align-items: center;
+  border-bottom: #fce1bafa 1px solid;
+  border-top: #fce1bafa 7px solid;
+}
+
+.nav__btns>li {
+  display: inline;
+}
+
+.nav__btns>li:hover {
+  cursor: pointer;
+}
+
+.nav__btns>li~li {
+  margin-left: 100px;
+}
+
+.nav__btns {
+  padding: 12px 0px;
+  display: flex;
+  margin: 0px;
+  justify-content: flex-start;
+}
+
+.nav__btn {
+  color: grey;
+}
+
+.nav__btn:hover {
+  color: #050505;
+  font-weight: 800;
+}
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-bottom: #fce1bafa 1px solid;
+}
+
+.btn-done, .btn-delete {
+  border: 1px solid #aa96da;
+  padding: 3px;
+  border-radius: 13px;
+  transition: all 0.5s;
+}
+
+.btn-delete {
+  border-radius: 20px;
+  color: red;
+  border-color: red;
+  width: 25px;
+  text-align: center;
+}
+
+.btn-done:hover, .btn-delete:hover {
+  color: white;
+  background: red;
+  cursor: pointer;
+}
+
+.check {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
